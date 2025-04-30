@@ -58,7 +58,9 @@ def evaluate_model(y_true, y_pred, model_name):
     print(f'RMSE: {rmse:.2f}\n')
 
     return mae, rmse
-
+@app.route("/")
+def index():
+    return "Hello, your Flask app is live on Render!"
 
 @app.route('/api/predictions')
 def get_predictions():
