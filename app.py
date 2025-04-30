@@ -62,7 +62,7 @@ def evaluate_model(y_true, y_pred, model_name):
 def index():
     return "Hello, your Flask app is live on Render!"
 
-@app.route('/api/predictions')
+@app.route('/api/predictions',,methods=["GET", "POST"])
 def get_predictions():
     try:
         df = load_data()
